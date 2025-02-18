@@ -1,3 +1,3 @@
 # Teste de css
 
-criando o efeito da habilidade de parar o tempo do Personagem Dio Brando 
+criando o efeito da habilidade de parar o tempo do Personagem Dio Brando de Jojo's Bizarre Adventure
