@@ -35,6 +35,7 @@ function TS() {
     const audio2 = document.getElementById("audio2");
     audio2.play();
     time = true;
+    Dio.classList.remove("Dio");
     setTimeout(() => {
       Dio.style.width = "300px";
       effect1.classList.remove("effect");
