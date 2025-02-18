@@ -1,0 +1,78 @@
+body{
+    overflow: hidden;
+    margin: 0;
+}
+.display{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(Cairo.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.animation{
+    animation: bg 2s ease-in-out forwards;
+}
+#stand{
+    z-index: 10;
+    display: none;
+}
+@keyframes bg{
+    50%{
+        filter: invert(100);
+        transform: scale(150%);
+    }
+    75%{
+        filter: invert(50) grayscale(50);
+    }
+    100%{  
+        filter: invert(0) grayscale(100);
+    }
+}
+.effect{
+    z-index: 9;
+    width: 95px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid rgb(87, 0, 128);
+    animation: stop 2s ease-in-out;
+}
+@keyframes stop{
+    50%{
+        filter: invert(100);
+    }
+    75%{
+        filter: invert(50) grayscale(50);
+    }
+    100%{  
+        transform: scale(1700%);
+        filter: invert(0) grayscale(100);
+    }
+}
+        img{
+            position: absolute;
+            z-index: 5;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 120px;
+        }
+        .Dio{
+            animation: TS 2s forwards
+        }
+        @keyframes TS{
+            50%{
+                filter: invert(100);
+            }
+            75%{
+                filter: invert(50) grayscale(50);
+            }
+            100%{
+                filter: invert(0) grayscale(0);
+            }
+        }
